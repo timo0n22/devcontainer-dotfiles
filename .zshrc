@@ -15,15 +15,6 @@ PROMPT='%F{#7daea3}%1~%f %# '
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
-setopt SHARE_HISTORY
-setopt HIST_IGNORE_DUPS
-setopt HIST_IGNORE_ALL_DUPS
-setopt HIST_FIND_NO_DUPS
-setopt HIST_IGNORE_SPACE
-setopt HIST_SAVE_NO_DUPS
-setopt HIST_REDUCE_BLANKS
-setopt HIST_VERIFY
-setopt HIST_EXPIRE_DUPS_FIRST
 
 # Aliases
 alias n="nvim ."
@@ -33,6 +24,7 @@ alias ls="ls --color=auto"
 alias ll="ls -l"
 alias la="ls -a"
 alias k="kubectl"
+alias lg="lazygit"
 
 # Zinit plugin manager
 if [[ ! -f ~/.zinit/bin/zinit.zsh ]]; then
